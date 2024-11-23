@@ -10,4 +10,5 @@ Sentry.init({
   ],
   tracesSampleRate: 1.0,
   tracePropagationTargets: ['localhost', /^https:\/\/outlook-acme-addin\.pages\.dev/],
+  profilesSampleRate: 1.0,
 })

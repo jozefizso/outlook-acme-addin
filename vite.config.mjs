@@ -26,7 +26,8 @@ export default defineConfig(async ({ command, mode, isSsrBuild, isPreview }) => 
     ],
     server: {
       headers: {
-        'Access-Control-Allow-Origin': '*'
+        'Access-Control-Allow-Origin': '*',
+        'Document-Policy': 'js-profiling',
       },
       https: mode === 'development' ? await certs.getHttpsServerOptions() : undefined,
       port: env.PORT || 3000
