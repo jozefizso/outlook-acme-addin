@@ -1,6 +1,7 @@
 import { defineConfig, loadEnv } from 'vite'
+import * as certs from 'office-addin-dev-certs'
 
-export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
+export default defineConfig(async ({ command, mode, isSsrBuild, isPreview }) => {
   const env = loadEnv(mode, process.cwd(), '')
 
   return {
@@ -18,6 +19,7 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
       headers: {
         'Access-Control-Allow-Origin': '*'
       },
+      https: mode === 'development' ? await certs.getHttpsServerOptions() : undefined,
       port: env.PORT || 3000
     }
   }
