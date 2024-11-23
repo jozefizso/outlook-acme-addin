@@ -80,6 +80,16 @@
                 </Group>
               </OfficeTab>
             </ExtensionPoint>
+
+            <!-- Contextual addin activation -->
+            <ExtensionPoint xsi:type="DetectedEntity">
+              <Label resid="AcmeUrlMatch.Label" />
+              <SourceLocation resid="Taskpane.Url" />
+              <Rule xsi:type="RuleCollection" Mode="And">
+                <Rule xsi:type="ItemIs" ItemType="Message" />
+                <Rule xsi:type="ItemHasRegularExpressionMatch" PropertyName="BodyAsPlaintext" RegExName="AcmeUrl" RegExValue="\b(?:https?:\/\/)acme\.com(\/?)\b" />
+              </Rule>
+            </ExtensionPoint>
           </DesktopFormFactor>
         </Host>
       </Hosts>
@@ -96,6 +106,7 @@
         <bt:ShortStrings>
           <bt:String id="GroupLabel" DefaultValue="Acme"/>
           <bt:String id="TaskpaneButton.Label" DefaultValue="Show Acme Taskpane"/>
+          <bt:String id="AcmeUrlMatch.Label" DefaultValue="Acme Homepage Address"/>
         </bt:ShortStrings>
         <bt:LongStrings>
           <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Opens a pane with Acme experience."/>

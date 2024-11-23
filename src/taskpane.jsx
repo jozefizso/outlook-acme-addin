@@ -4,12 +4,17 @@ import * as Sentry from "@sentry/react";
 const Taskpane = (props) => {
   const { host, platform } = props.hostInfo
 
-  /*
-  <p id="officejs-required-info">
-    Add-in is not connected to Office application,
-    or <code>Office.js</code> failed to load.
-  </p>
-  */
+  var elmMatches = <p>No matches found</p>
+
+  var allMatches = Office.context.mailbox.item.getRegExMatches()
+  if (allMatches) {
+    elmMatches = (
+      <div>
+        <p>Your e-mail contains links to these services:</p>
+        <p>{JSON.stringify(allMatches.AcmeUrl)}</p>
+      </div>
+    )
+  }
 
   return (
     <div>
@@ -20,6 +25,7 @@ const Taskpane = (props) => {
       <div id="outlook-app">
         App connected to {host} on {platform}.
       </div>
+      {elmMatches}
       <p>
         <button type="button" onClick={() => { throw new Error("Sentry Test Error") }}>Break the world</button>
       </p>
