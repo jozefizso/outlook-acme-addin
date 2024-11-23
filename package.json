@@ -4,7 +4,8 @@
   "private": true,
   "license": "Copyright (c) 2024 Jozef Izso",
   "scripts": {
-    "start": "vite"
+    "start": "vite",
+    "build": "vite build --emptyOutDir"
   },
   "dependencies": {},
   "devDependencies": {
