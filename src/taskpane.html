@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acme Add-in for Outlook</title>
+  <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.debug.js"></script>
+</head>
+<body>
+  <main>
+    <div>
+      <h1>Acme Add-in</h1>
+      <p class="info">
+        Office web based add-in.
+      </p>
+      <p id="officejs-required-info">
+        Add-in is not connected to Office application,
+        or <code>Office.js</code> failed to load.
+      </p>
+      <div id="outlook-app"></div>
+    </div>
+  </main>
+  <script type="module" src="/taskpane.js"></script>
+</body>
+</html>

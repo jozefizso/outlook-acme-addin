@@ -1,0 +1,15 @@
+{
+    "name": "outlook-acme-addin",
+    "version": "0.1.0",
+    "private": true,
+    "license": "Copyright (c) 2024 Jozef Izso",
+    "scripts": {
+      "start": "vite"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+      "vite": "^5.4.11"
+    }
+  }
+  
