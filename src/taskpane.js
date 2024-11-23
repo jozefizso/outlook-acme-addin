@@ -1,6 +1,10 @@
-/* global document, Office, module, require, HTMLElement */
+/* global document, Office, Sentry */
+
+const spanInit = Sentry.startInactiveSpan({ name: "office-initialize", op: 'officejs.onready' });
 
 Office.onReady((info) => {
+  spanInit.end();
+
   if (!info.host) {
     console.log('Warning: Office host information is not set.', info)
     return
