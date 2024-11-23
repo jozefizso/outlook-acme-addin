@@ -9,6 +9,7 @@ export default defineConfig(async ({ command, mode, isSsrBuild, isPreview }) => 
   return {
     root: 'src',
     publicDir: '../public',
+    envDir: '../',
     build: {
       manifest: true,
       outDir: '../dist',
