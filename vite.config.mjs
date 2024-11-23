@@ -13,6 +13,7 @@ export default defineConfig(async ({ command, mode, isSsrBuild, isPreview }) => 
       outDir: '../dist',
       rollupOptions: {
         input: {
+          'index': 'src/index.html',
           'taskpane': 'src/taskpane.html',
         }
       }
