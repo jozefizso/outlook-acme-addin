@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Acme Add-in for Outlook</title>
   <link rel="stylesheet" href="https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/office-ui-fabric-core/11.1.0/css/fabric.min.css" />
+  <script src="https://browser.sentry-cdn.com/8.40.0/bundle.tracing.min.js" integrity="sha384-RJuJafS05CMMBWS88y1Fr28yxGBOps2WX6X+OqAdiPkMK89AqBLQVSjaVi8yUoKi" crossorigin="anonymous"></script>
+  <script>
+    Sentry.init({
+      dsn: 'https://b4ff88695769edca23b38d000560dd77@o4506418945392640.ingest.us.sentry.io/4508347524644864',
+      release: 'outlook-acme-addin@0.1.0',
+      integrations: [
+        Sentry.browserTracingIntegration(),
+      ],
+      tracesSampleRate: 1.0,
+      tracePropagationTargets: ['localhost', /^https:\/\/outlook-acme-addin\.pages\.dev/],
+    });
+  </script>
   <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.debug.js"></script>
 </head>
 <body class="ms-Fabric" dir="ltr">
