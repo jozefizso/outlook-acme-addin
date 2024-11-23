@@ -506,6 +506,11 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.6.tgz#628effeeae2064a1b4e79f78e81d87b7e5fc7b50"
   integrity sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==
 
+"@types/office-js@^1.0.449":
+  version "1.0.449"
+  resolved "https://registry.yarnpkg.com/@types/office-js/-/office-js-1.0.449.tgz#ea1024f6cdcfc95026b2698dcb65f81eca35a087"
+  integrity sha512-asYru7x5zzjSuj9FNPHfXTWZ4RGh8iwzpX8JtNX6UrsaH+GcmSZHzjhkKmIImsfF3F9Xb8jKOwQmM2LnnwOl0g==
+
 "@types/prop-types@*":
   version "15.7.13"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.13.tgz#2af91918ee12d9d32914feb13f5326658461b451"
