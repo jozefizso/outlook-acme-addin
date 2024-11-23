@@ -1,4 +1,6 @@
 
+import * as Sentry from "@sentry/react";
+
 const Taskpane = (props) => {
   const { host, platform } = props.hostInfo
 
@@ -25,4 +27,4 @@ const Taskpane = (props) => {
   )
 }
 
-export default Taskpane
+export default Sentry.withProfiler(Taskpane)
