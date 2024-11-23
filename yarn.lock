@@ -494,6 +494,11 @@ uuid@8.3.2:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
+vite-plugin-office-addin@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-office-addin/-/vite-plugin-office-addin-2.1.0.tgz#06c3ec6d65604a0c139054de7e53df9f53d7c28c"
+  integrity sha512-6BOxDRzpdKtZ2R6RH+pO5QfIDZuDWRWTRzdPssd/gneaLnG3Wfor6a83lXkSGkkjD6MR3Y3H6xNZF8wtsDj1OA==
+
 vite@^5.4.11:
   version "5.4.11"
   resolved "https://registry.yarnpkg.com/vite/-/vite-5.4.11.tgz#3b415cd4aed781a356c1de5a9ebafb837715f6e5"

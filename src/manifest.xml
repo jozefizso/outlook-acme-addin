@@ -17,10 +17,10 @@
   <IconUrl DefaultValue="https://localhost:3000/assets/acme-addin-icons8-64.png" />
   <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/acme-addin-icons8-128.png"/>
 
-  <SupportUrl DefaultValue="https://example.org/support" />
+  <SupportUrl DefaultValue="https://localhost:3000/support" />
 
   <AppDomains>
-    <AppDomain>https://outlook-addin.acme.com</AppDomain>
+    <AppDomain>https://outlook-acme-addin.pages.dev</AppDomain>
   </AppDomains>
 
   <Hosts>
