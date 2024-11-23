@@ -7,8 +7,15 @@
     "start": "vite",
     "build": "vite build --emptyOutDir"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@sentry/react": "^8.40.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
   "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
     "office-addin-dev-certs": "^1.13.5",
     "vite": "^5.4.11",
     "vite-plugin-office-addin": "^2.1.0"
