@@ -9,13 +9,13 @@
   },
   "dependencies": {
     "@sentry/react": "^9.8.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@types/office-js": "^1.0.449",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
+    "@types/office-js": "^1.0.480",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
     "office-addin-dev-certs": "^2.0.3",
     "vite": "^6.2.2",
