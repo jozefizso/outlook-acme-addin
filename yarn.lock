@@ -646,10 +646,10 @@ commander@^11.0.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-11.1.0.tgz#62fdce76006a68e5c1ab3314dc92e800eb83d906"
   integrity sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==
 
-commander@^6.2.0, commander@^6.2.1:
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
-  integrity sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==
+commander@^13.0.0:
+  version "13.1.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-13.1.0.tgz#776167db68c78f38dcce1f9b8d7b8b9a488abf46"
+  integrity sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==
 
 continuation-local-storage@^3.2.1:
   version "3.2.1"
@@ -855,33 +855,33 @@ npm-normalize-package-bin@^1.0.1:
   resolved "https://registry.yarnpkg.com/npm-normalize-package-bin/-/npm-normalize-package-bin-1.0.1.tgz#6e79a41f23fd235c0623218228da7d9c23b8f6e2"
   integrity sha512-EPfafl6JL5/rU+ot6P3gRSCpPDW5VmIzX959Ob1+ySFUuuYHWHekXpwdUZcKP5C+DS4GEtdJluwBjnsNDl+fSA==
 
-office-addin-cli@^1.6.5:
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/office-addin-cli/-/office-addin-cli-1.6.5.tgz#7fb2e28941a09fa6dbe97bb3e6c0e3ef6df181d6"
-  integrity sha512-P1lH2FVPk0PkOlex1GjkNxP0VAeJmcMICwxWlkEIsfWS32U8rPlnGXbeyZwv5PA/b05Pb0Vykq3oFj97wgPRUA==
+office-addin-cli@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/office-addin-cli/-/office-addin-cli-2.0.3.tgz#0857dd2d99b8e50b1dd1a42a0b22b3df5e9db457"
+  integrity sha512-WeAK9/ZdEFiO4NEuya1TzDVrveNeZx4rjN+slyL5UCNcazqoDqwvcEv816rGyrNg7Sbfbq0Zzn0M2RiE5blceQ==
   dependencies:
-    commander "^6.2.1"
+    commander "^13.0.0"
     node-fetch "^2.6.1"
     read-package-json-fast "^2.0.2"
 
-office-addin-dev-certs@^1.13.5:
-  version "1.13.5"
-  resolved "https://registry.yarnpkg.com/office-addin-dev-certs/-/office-addin-dev-certs-1.13.5.tgz#4fe3b399b476266624dc15a53e33b8bb6ee08cbc"
-  integrity sha512-jtp8ad1St0InNJoxmwDMbFqT2R7iMLS4sgDf8Ax5MGFcG63u3RVo52Yz70GNQzWwYM2sItxzEUdtuJXBTc0Fyg==
+office-addin-dev-certs@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/office-addin-dev-certs/-/office-addin-dev-certs-2.0.3.tgz#21f83150a99d4efb73747d63f785d6bf8ff41841"
+  integrity sha512-Q/hIbzb1zKjoMubaTBguq50UYVrn50O5d8clhJXOizNSeytQXzRZznWw6rg3dSuLyOjqrbc3xJ5pCzi8wntg3Q==
   dependencies:
-    commander "^6.2.0"
+    commander "^13.0.0"
     fs-extra "^11.2.0"
     mkcert "^3.2.0"
-    office-addin-cli "^1.6.5"
-    office-addin-usage-data "^1.6.14"
+    office-addin-cli "^2.0.3"
+    office-addin-usage-data "^2.0.3"
 
-office-addin-usage-data@^1.6.14:
-  version "1.6.14"
-  resolved "https://registry.yarnpkg.com/office-addin-usage-data/-/office-addin-usage-data-1.6.14.tgz#389906ca3b262ed11bc63d9f20cebdd4ea4f79ff"
-  integrity sha512-V3TQoMR7McjJ62TWQeRnZqVp1mpjk1bbazvea/pqCJod5zggjlgDspjL5NJzTZc4+MwwJPR8k5Yr5Me+OcRLQw==
+office-addin-usage-data@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/office-addin-usage-data/-/office-addin-usage-data-2.0.3.tgz#a6c786b5ee2ae2cb6ae7080bad3056138cce9162"
+  integrity sha512-kKAqep+fBe6aFVFsaAQhDQ9UyaZRZnJNo+kWSfcasZGm4h1AS1cPrZvcqxaViD/MDAvGdsDCgKzgdzIcFjyzXw==
   dependencies:
     applicationinsights "^1.7.3"
-    commander "^6.2.0"
+    commander "^13.0.0"
     readline-sync "^1.4.9"
     uuid "8.3.2"
 

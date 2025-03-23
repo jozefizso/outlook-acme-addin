@@ -17,7 +17,7 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
-    "office-addin-dev-certs": "^1.13.5",
+    "office-addin-dev-certs": "^2.0.3",
     "vite": "^6.2.2",
     "vite-plugin-office-addin": "^2.1.0"
   }
