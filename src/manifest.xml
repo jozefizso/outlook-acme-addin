@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OfficeApp
           xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
           xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
           xsi:type="MailApp">
   <Id>694eec0c-87a2-451c-b43e-681d25dd4a93</Id>
@@ -92,6 +92,34 @@
               </Rule>
             </ExtensionPoint>
           </DesktopFormFactor>
+
+          <MobileFormFactor>
+            <FunctionFile resid="residUILessFunctionFileUrl" />
+            <ExtensionPoint xsi:type="MobileMessageReadCommandSurface">
+              <Group id="msgReadGroup">
+                <Label resid="GroupLabel" />
+                <Control xsi:type="MobileButton" id="msgReadOpenPaneButton">
+                  <Label resid="TaskpaneButton.Label" />
+                  <Icon xsi:type="bt:MobileIconList">
+                    <bt:Image size="25" scale="1" resid="ReadModeIcon.32x32" />
+                    <bt:Image size="25" scale="2" resid="ReadModeIcon.32x32" />
+                    <bt:Image size="25" scale="3" resid="ReadModeIcon.32x32" />
+        
+                    <bt:Image size="32" scale="1" resid="ReadModeIcon.32x32" />
+                    <bt:Image size="32" scale="2" resid="ReadModeIcon.32x32" />
+                    <bt:Image size="32" scale="3" resid="ReadModeIcon.32x32" />
+        
+                    <bt:Image size="48" scale="1" resid="ReadModeIcon.80x80" />
+                    <bt:Image size="48" scale="2" resid="ReadModeIcon.80x80" />
+                    <bt:Image size="48" scale="3" resid="ReadModeIcon.80x80" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="Taskpane.Url" />
+                  </Action>
+                </Control>
+              </Group>
+            </ExtensionPoint>
+          </MobileFormFactor>
         </Host>
       </Hosts>
 
