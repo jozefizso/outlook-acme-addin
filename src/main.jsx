@@ -11,6 +11,7 @@ const root = createRoot(container);
 const spanInit = Sentry.startInactiveSpan({ name: "office-initialize", op: 'officejs.onready' })
 
 Office.onReady((info) => {
+  spanInit.setAttributes({ host: info.host, platform: info.platform })
   spanInit.end()
 
   root?.render(
