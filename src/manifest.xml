@@ -7,7 +7,7 @@
           xsi:type="MailApp">
   <Id>694eec0c-87a2-451c-b43e-681d25dd4a93</Id>
 
-  <Version>0.2.0.0</Version>
+  <Version>0.3.0.0</Version>
   <ProviderName>Acme</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
 
@@ -94,9 +94,9 @@
           </DesktopFormFactor>
 
           <MobileFormFactor>
-            <FunctionFile resid="residUILessFunctionFileUrl" />
+            <!-- <FunctionFile resid="residUILessFunctionFileUrl" /> -->
             <ExtensionPoint xsi:type="MobileMessageReadCommandSurface">
-              <Group id="msgReadGroup">
+              <Group id="mobileMsgRead">
                 <Label resid="GroupLabel" />
                 <Control xsi:type="MobileButton" id="msgReadOpenPaneButton">
                   <Label resid="TaskpaneButton.Label" />
